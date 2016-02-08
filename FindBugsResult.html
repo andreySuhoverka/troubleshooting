@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			hcm-epam</p>
+<h2>Metrics</h2>
+<p>1735 lines of code analyzed,
+	in 30 classes, 
+	in 1 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right"/>
+<td align="right">NaN</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">23</td>
+<td align="right">13.26</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>23</b>
+</td>
+<td align="right">
+<b>13.26</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</td>
+<td align="right">12</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">9</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>23</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RpC_REPEATED_CONDITIONAL_TEST">Repeated conditional tests</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Repeated conditional test in com.ihg.hcm.lanyon.categoryHandler.ServicesHandler.populateAirportShuttle(ServicesType, Map)<br/>
+<br/>
+<br/>In file ServicesHandler.java,
+					
+						line 99<br/>In class com.ihg.hcm.lanyon.categoryHandler.ServicesHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.ServicesHandler.populateAirportShuttle(ServicesType, Map)<br/>At ServicesHandler.java:[line 99]<br/>At ServicesHandler.java:[line 100]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RpC_REPEATED_CONDITIONAL_TEST">Repeated conditional tests</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Repeated conditional test in com.ihg.hcm.lanyon.categoryHandler.ServicesHandler.populateHairDresser(ServicesType, Map)<br/>
+<br/>
+<br/>In file ServicesHandler.java,
+					
+						line 126<br/>In class com.ihg.hcm.lanyon.categoryHandler.ServicesHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.ServicesHandler.populateHairDresser(ServicesType, Map)<br/>At ServicesHandler.java:[line 126]<br/>At ServicesHandler.java:[line 127]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_PERFORMANCE">Performance Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_TOSTRING">Method allocates a boxed primitive just to call toString</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Primitive boxed just to call toString in com.ihg.hcm.lanyon.categoryHandler.AirportsHandler.populateAirportDetails(AirportsType, Map)<br/>
+<br/>
+<br/>In file AirportsHandler.java,
+					
+						line 91<br/>In class com.ihg.hcm.lanyon.categoryHandler.AirportsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.AirportsHandler.populateAirportDetails(AirportsType, Map)<br/>Called method Integer.toString()<br/>Should call Integer.toString(int) instead<br/>At AirportsHandler.java:[line 91]<br/>At AirportsHandler.java:[line 91]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>com.ihg.hcm.lanyon.categoryHandler.AirportsHandler.populateAirportDetails(AirportsType, Map) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead<br/>
+<br/>
+<br/>In file AirportsHandler.java,
+					
+						line 91<br/>In class com.ihg.hcm.lanyon.categoryHandler.AirportsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.AirportsHandler.populateAirportDetails(AirportsType, Map)<br/>Called method new Integer(int)<br/>Should call Integer.valueOf(int) instead<br/>At AirportsHandler.java:[line 91]<br/>At AirportsHandler.java:[line 91]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_TOSTRING">Method allocates a boxed primitive just to call toString</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Primitive boxed just to call toString in com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler.populateBlackoutDates(BlackoutDatesType, Map)<br/>
+<br/>
+<br/>In file BlackoutDatesHandler.java,
+					
+						line 57<br/>In class com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler.populateBlackoutDates(BlackoutDatesType, Map)<br/>Called method Integer.toString()<br/>Should call Integer.toString(int) instead<br/>At BlackoutDatesHandler.java:[line 57]<br/>At BlackoutDatesHandler.java:[line 57]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler.populateBlackoutDates(BlackoutDatesType, Map) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead<br/>
+<br/>
+<br/>In file BlackoutDatesHandler.java,
+					
+						line 57<br/>In class com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler.populateBlackoutDates(BlackoutDatesType, Map)<br/>Called method new Integer(int)<br/>Should call Integer.valueOf(int) instead<br/>At BlackoutDatesHandler.java:[line 57]<br/>At BlackoutDatesHandler.java:[line 57]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_TOSTRING">Method allocates a boxed primitive just to call toString</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Primitive boxed just to call toString in com.ihg.hcm.lanyon.categoryHandler.DiningOptionsHandler.populateDiningOption(DiningOptionsType, List, HotelAttribute, int)<br/>
+<br/>
+<br/>In file DiningOptionsHandler.java,
+					
+						line 79<br/>In class com.ihg.hcm.lanyon.categoryHandler.DiningOptionsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.DiningOptionsHandler.populateDiningOption(DiningOptionsType, List, HotelAttribute, int)<br/>Called method Integer.toString()<br/>Should call Integer.toString(int) instead<br/>At DiningOptionsHandler.java:[line 79]<br/>At DiningOptionsHandler.java:[line 79]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>com.ihg.hcm.lanyon.categoryHandler.DiningOptionsHandler.populateDiningOption(DiningOptionsType, List, HotelAttribute, int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead<br/>
+<br/>
+<br/>In file DiningOptionsHandler.java,
+					
+						line 79<br/>In class com.ihg.hcm.lanyon.categoryHandler.DiningOptionsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.DiningOptionsHandler.populateDiningOption(DiningOptionsType, List, HotelAttribute, int)<br/>Called method new Integer(int)<br/>Should call Integer.valueOf(int) instead<br/>At DiningOptionsHandler.java:[line 79]<br/>At DiningOptionsHandler.java:[line 79]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_TOSTRING">Method allocates a boxed primitive just to call toString</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Primitive boxed just to call toString in com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler.populateMeetingRoomDetails(MeetingRoomsDetailsType, Map)<br/>
+<br/>
+<br/>In file MeetingRoomDetailsHandler.java,
+					
+						line 58<br/>In class com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler.populateMeetingRoomDetails(MeetingRoomsDetailsType, Map)<br/>Called method Integer.toString()<br/>Should call Integer.toString(int) instead<br/>At MeetingRoomDetailsHandler.java:[line 58]<br/>At MeetingRoomDetailsHandler.java:[line 58]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler.populateMeetingRoomDetails(MeetingRoomsDetailsType, Map) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead<br/>
+<br/>
+<br/>In file MeetingRoomDetailsHandler.java,
+					
+						line 58<br/>In class com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler.populateMeetingRoomDetails(MeetingRoomsDetailsType, Map)<br/>Called method new Integer(int)<br/>Should call Integer.valueOf(int) instead<br/>At MeetingRoomDetailsHandler.java:[line 58]<br/>At MeetingRoomDetailsHandler.java:[line 58]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_TOSTRING">Method allocates a boxed primitive just to call toString</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Primitive boxed just to call toString in com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler.populateReferencePoints(ReferencePointsType, Map)<br/>
+<br/>
+<br/>In file ReferencePointsHandler.java,
+					
+						line 62<br/>In class com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler.populateReferencePoints(ReferencePointsType, Map)<br/>Called method Integer.toString()<br/>Should call Integer.toString(int) instead<br/>At ReferencePointsHandler.java:[line 62]<br/>At ReferencePointsHandler.java:[line 62]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler.populateReferencePoints(ReferencePointsType, Map) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead<br/>
+<br/>
+<br/>In file ReferencePointsHandler.java,
+					
+						line 62<br/>In class com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler.populateReferencePoints(ReferencePointsType, Map)<br/>Called method new Integer(int)<br/>Should call Integer.valueOf(int) instead<br/>At ReferencePointsHandler.java:[line 62]<br/>At ReferencePointsHandler.java:[line 62]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>com.ihg.hcm.lanyon.categoryHandler.RoomsHandler.getRoomCodesMap(RoomsType, Map) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file RoomsHandler.java,
+					
+						line 139<br/>In class com.ihg.hcm.lanyon.categoryHandler.RoomsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.RoomsHandler.getRoomCodesMap(RoomsType, Map)<br/>At RoomsHandler.java:[line 139]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>com.ihg.hcm.lanyon.categoryHandler.RatingsHandler.populateHotelTypes(RatingsType, Map) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file RatingsHandler.java,
+					
+						line 113<br/>In class com.ihg.hcm.lanyon.categoryHandler.RatingsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.RatingsHandler.populateHotelTypes(RatingsType, Map)<br/>At RatingsHandler.java:[line 113]<br/>At RatingsHandler.java:[line 113]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of attribute, which is known to be non-null in com.ihg.hcm.lanyon.categoryHandler.AirportsHandler.populateAirportDetails(AirportsType, Map)<br/>
+<br/>
+<br/>In file AirportsHandler.java,
+					
+						line 60<br/>In class com.ihg.hcm.lanyon.categoryHandler.AirportsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.AirportsHandler.populateAirportDetails(AirportsType, Map)<br/>Value loaded from attribute<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at AirportsHandler.java:[line 60]<br/>Redundant null check at AirportsHandler.java:[line 60]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of attribute, which is known to be non-null in com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler.populateBlackoutDates(BlackoutDatesType, Map)<br/>
+<br/>
+<br/>In file BlackoutDatesHandler.java,
+					
+						line 51<br/>In class com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.BlackoutDatesHandler.populateBlackoutDates(BlackoutDatesType, Map)<br/>Value loaded from attribute<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at BlackoutDatesHandler.java:[line 51]<br/>Redundant null check at BlackoutDatesHandler.java:[line 51]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of attribute, which is known to be non-null in com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler.populateMeetingRoomDetails(MeetingRoomsDetailsType, Map)<br/>
+<br/>
+<br/>In file MeetingRoomDetailsHandler.java,
+					
+						line 51<br/>In class com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.MeetingRoomDetailsHandler.populateMeetingRoomDetails(MeetingRoomsDetailsType, Map)<br/>Value loaded from attribute<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at MeetingRoomDetailsHandler.java:[line 51]<br/>Redundant null check at MeetingRoomDetailsHandler.java:[line 51]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of attribute, which is known to be non-null in com.ihg.hcm.lanyon.categoryHandler.OptionsHandler.populateOptions(OptionsType, Map)<br/>
+<br/>
+<br/>In file OptionsHandler.java,
+					
+						line 54<br/>In class com.ihg.hcm.lanyon.categoryHandler.OptionsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.OptionsHandler.populateOptions(OptionsType, Map)<br/>Value loaded from attribute<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at OptionsHandler.java:[line 54]<br/>Redundant null check at OptionsHandler.java:[line 54]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of attribute, which is known to be non-null in com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler.populateReferencePoints(ReferencePointsType, Map)<br/>
+<br/>
+<br/>In file ReferencePointsHandler.java,
+					
+						line 53<br/>In class com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.ReferencePointsHandler.populateReferencePoints(ReferencePointsType, Map)<br/>Value loaded from attribute<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at ReferencePointsHandler.java:[line 53]<br/>Redundant null check at ReferencePointsHandler.java:[line 53]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of attribute, which is known to be non-null in com.ihg.hcm.lanyon.categoryHandler.RoomsHandler.getRoomCodesMap(RoomsType, Map)<br/>
+<br/>
+<br/>In file RoomsHandler.java,
+					
+						line 117<br/>In class com.ihg.hcm.lanyon.categoryHandler.RoomsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.RoomsHandler.getRoomCodesMap(RoomsType, Map)<br/>Value loaded from attribute<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at RoomsHandler.java:[line 117]<br/>Redundant null check at RoomsHandler.java:[line 117]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of aa, which is known to be non-null in com.ihg.hcm.lanyon.categoryHandler.ServicesHandler.populateAirportShuttle(ServicesType, Map)<br/>
+<br/>
+<br/>In file ServicesHandler.java,
+					
+						line 100<br/>In class com.ihg.hcm.lanyon.categoryHandler.ServicesHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.ServicesHandler.populateAirportShuttle(ServicesType, Map)<br/>Value loaded from aa<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at ServicesHandler.java:[line 100]<br/>Redundant null check at ServicesHandler.java:[line 100]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of aa, which is known to be non-null in com.ihg.hcm.lanyon.categoryHandler.ServicesHandler.populateHairDresser(ServicesType, Map)<br/>
+<br/>
+<br/>In file ServicesHandler.java,
+					
+						line 127<br/>In class com.ihg.hcm.lanyon.categoryHandler.ServicesHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.ServicesHandler.populateHairDresser(ServicesType, Map)<br/>Value loaded from aa<br/>Return value of java.util.Map.get(Object) of type Object<br/>Redundant null check at ServicesHandler.java:[line 127]<br/>Redundant null check at ServicesHandler.java:[line 127]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Return value of com.lanyon.soap.HotelType.getProfile() ignored, but method has no side effect<br/>
+<br/>
+<br/>In file GeneralsHandler.java,
+					
+						line 79<br/>In class com.ihg.hcm.lanyon.categoryHandler.GeneralsHandler<br/>In method com.ihg.hcm.lanyon.categoryHandler.GeneralsHandler.populateGenerals(GeneralsType, Map, HotelType)<br/>Called method com.lanyon.soap.HotelType.getProfile()<br/>At GeneralsHandler.java:[line 79]<br/>At GeneralsHandler.java:[line 79]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DM_BOXED_PRIMITIVE_TOSTRING">Method allocates a boxed primitive just to call toString</a>
+</h2>
+
+  <p>A boxed primitive is allocated just to call toString(). It is more effective to just use the static
+  form of toString which takes the primitive value. So,</p>
+  <table>
+     <tr><th>Replace...</th><th>With this...</th></tr>
+     <tr><td>new Integer(1).toString()</td><td>Integer.toString(1)</td></tr>
+     <tr><td>new Long(1).toString()</td><td>Long.toString(1)</td></tr>
+     <tr><td>new Float(1.0).toString()</td><td>Float.toString(1.0)</td></tr>
+     <tr><td>new Double(1.0).toString()</td><td>Double.toString(1.0)</td></tr>
+     <tr><td>new Byte(1).toString()</td><td>Byte.toString(1)</td></tr>
+     <tr><td>new Short(1).toString()</td><td>Short.toString(1)</td></tr>
+     <tr><td>new Boolean(true).toString()</td><td>Boolean.toString(true)</td></tr>
+  </table>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</h2>
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</h2>
+
+<p> This method contains a redundant check of a known non-null value against
+the constant null.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RpC_REPEATED_CONDITIONAL_TEST">Repeated conditional tests</a>
+</h2>
+
+<p>The code contains a conditional test is performed twice, one right after the other
+(e.g., <code>x == 0 || x == 0</code>). Perhaps the second occurrence is intended to be something else
+(e.g., <code>x == 0 || y == 0</code>).
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</h2>
+
+<p>This code calls a method and ignores the return value. However our analysis shows that
+the method (including its implementations in subclasses if any) does not produce any effect 
+other than return value. Thus this call can be removed.
+</p>
+<p>We are trying to reduce the false positives as much as possible, but in some cases this warning might be wrong.
+Common false-positive cases include:</p>
+<p>- The method is designed to be overridden and produce a side effect in other projects which are out of the scope of the analysis.</p>
+<p>- The method is called to trigger the class loading which may have a side effect.</p>
+<p>- The method is called just to get some exception.</p>
+<p>If you feel that our assumption is incorrect, you can use a @CheckReturnValue annotation
+to instruct FindBugs that ignoring the return value of this method is acceptable.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</h2>
+
+<p> The method seems to be building a String using concatenation in a loop.
+In each iteration, the String is converted to a StringBuffer/StringBuilder,
+   appended to, and converted back to a String.
+   This can lead to a cost quadratic in the number of iterations,
+   as the growing string is recopied in each iteration. </p>
+
+<p>Better performance can be obtained by using
+a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
+
+<p> For example:</p>
+<pre>
+  // This is bad
+  String s = "";
+  for (int i = 0; i &lt; field.length; ++i) {
+    s = s + field[i];
+  }
+
+  // This is better
+  StringBuffer buf = new StringBuffer();
+  for (int i = 0; i &lt; field.length; ++i) {
+    buf.append(field[i]);
+  }
+  String s = buf.toString();
+</pre>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</h2>
+
+<p> This method accesses the value of a Map entry, using a key that was retrieved from
+a keySet iterator. It is more efficient to use an iterator on the entrySet of the map, to avoid the
+Map.get(key) lookup.</p>
+
+        
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>
