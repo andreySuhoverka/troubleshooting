@@ -1,0 +1,6 @@
+1. Unused import java.util.HashMap in AirportsHandler
+2. line 125 AirportsHandler.populateAirportDetails
+
+replace """if (lanyonSubCategory == null || "".equals(lanyonSubCategory)) { """ with if(StringUtils.isNotBlank(lanyonSubCategory))
+
+3. Divide method AirportsHandler.populateAirportDetails into several smaller ones. There too many if else cases.
